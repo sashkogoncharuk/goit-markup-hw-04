@@ -3,6 +3,7 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --primary-background-color: #e5e5e5;
+  --hero-background-color: #c4c4c4;
   --dark-background-color: #2f303a;
   --grey-background-color: #f5f4fa;
   --accent-color: #2196f3;
@@ -31,6 +32,7 @@ ul {
 .container {
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -66,6 +68,7 @@ ul {
 
 .nav-list {
   display: flex;
+  align-items: center;
   margin-left: 93px;
   color: var(--title-text-color);
 }
@@ -80,6 +83,7 @@ ul {
 
 .contact-list {
   display: flex;
+  align-items: center;
   margin-left: auto;
   color: var(--primary-text-color);
 }
@@ -90,7 +94,7 @@ ul {
 
 .nav-link,
 .contact-link {
-  display: block;
+  display: flex;
   font-weight: 500;
   line-height: 1.12;
   letter-spacing: 0.03em;
@@ -98,6 +102,20 @@ ul {
 
 .current {
   color: var(--accent-color);
+}
+
+.post-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.smartphone-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .nav-link:hover,
@@ -112,7 +130,22 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-color: var(--dark-background-color);
+  background-color: var(--hero-background-color);
+}
+
+.hero.background {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-img.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
