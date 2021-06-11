@@ -97,6 +97,7 @@ ul {
   font-weight: 500;
   line-height: 1.12;
   letter-spacing: 0.03em;
+  align-items: center;
 }
 
 .current {
@@ -104,6 +105,7 @@ ul {
 }
 
 .post-icon {
+  display: block;
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -111,6 +113,7 @@ ul {
 }
 
 .smartphone-icon {
+  display: block;
   width: 10px;
   height: 16px;
   margin-right: 10px;
@@ -203,6 +206,19 @@ ul {
   width: 270px;
   color: var(--primary-text-color);
   line-height: 1.71;
+}
+
+.benefits-background {
+  width: 270px;
+  height: 120px;
+  background-color: var(--grey-background-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.benefits-icon {
+  width: 70px;
+  height: 70px;
 }
 
 /* what we do section */
