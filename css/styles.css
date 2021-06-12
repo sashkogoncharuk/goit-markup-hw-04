@@ -287,7 +287,6 @@ ul {
 
 .card-member {
   padding-top: 30px;
-  padding-bottom: 30px;
   text-align: center;
 }
 
@@ -313,6 +312,33 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.17;
+}
+
+.social-links-block {
+  display: flex;
+  align-items: center;
+  padding: 16px 32px 30px 32px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  fill: var(--icons-color);
+}
+
+.social-links:last-child {
+  margin-right: 0px;
+}
+
+.social-links:hover,
+.social-links:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  fill: var(--hero-text-color);
 }
 
 /* clients section */
@@ -347,7 +373,7 @@ ul {
   display: flex;
   width: 170px;
   height: 92px;
-  color: var(--icons-color);
+  fill: var(--icons-color);
   border: 1px solid var(--icons-color);
   box-sizing: border-box;
   border-radius: 4px;
@@ -355,15 +381,10 @@ ul {
   justify-content: center;
 }
 
-.clients-pic {
-  display: block;
-  fill: currentColor;
-}
-
 .clients-link:hover,
 .clients-link:focus {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* footer section */
@@ -371,13 +392,12 @@ ul {
 .footer {
   display: block;
   width: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: var(--dark-background-color);
 }
 
 .logo-footer {
   display: block;
+  padding-top: 60px;
   margin-bottom: 20px;
   color: var(--hero-text-color);
   font-family: Raleway;
@@ -400,6 +420,10 @@ ul {
   text-decoration: none;
 }
 
+.footer-contacts {
+  padding-bottom: 60px;
+}
+
 .footer-contacts .item {
   margin-bottom: 9px;
 }
@@ -412,6 +436,48 @@ ul {
 .footer-nav-link:focus,
 .footer-nav-link:active {
   color: var(--accent-color);
+}
+
+.contacts {
+  margin-right: 70px;
+}
+
+.social-links-footer {
+  display: flex;
+}
+
+.footer-section {
+  display: flex;
+}
+
+.social-contacts-description {
+  color: var(--hero-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
+.social-contacts {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
+.social-links {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.social-link-footer {
+  fill: var(--hero-text-color);
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+  background-color: var(--accent-color);
 }
 
 /* portfolio navigation section */
