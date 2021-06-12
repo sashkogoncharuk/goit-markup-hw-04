@@ -7,6 +7,7 @@
   --dark-background-color: #2f303a;
   --grey-background-color: #f5f4fa;
   --accent-color: #2196f3;
+  --icons-color: #afb1b8;
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --primary-font-family: "Roboto", sans-serif;
 }
@@ -176,6 +177,11 @@ ul {
   border: none;
 }
 
+.button:hover {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 /* our benefits section */
 
 .benefits-section {
@@ -209,11 +215,14 @@ ul {
 }
 
 .benefits-background {
+  display: flex;
   width: 270px;
   height: 120px;
   background-color: var(--grey-background-color);
   border-radius: 4px;
   margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
 .benefits-icon {
@@ -304,6 +313,54 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.17;
+}
+
+/* clients section */
+
+.clients-title {
+  margin-bottom: 50px;
+  text-align: center;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.clients-list {
+  display: flex;
+}
+
+.clients {
+  padding-top: 64px;
+  padding-bottom: 94px;
+}
+
+.clients-list .item {
+  margin-right: 30px;
+}
+
+.clients-list .item:last-child {
+  margin-right: 0;
+}
+
+.clients-link {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--icons-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.client4 {
+  fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
 }
 
 /* footer section */
@@ -412,6 +469,11 @@ ul {
   flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.portfolio-list .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-list .item:nth-child(3n + 3) {
