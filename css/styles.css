@@ -344,9 +344,10 @@ ul {
 }
 
 .clients-link {
-  display: block;
+  display: flex;
   width: 170px;
   height: 92px;
+  color: var(--icons-color);
   border: 1px solid var(--icons-color);
   box-sizing: border-box;
   border-radius: 4px;
@@ -354,13 +355,15 @@ ul {
   justify-content: center;
 }
 
-.client4 {
+.clients-pic {
+  display: block;
   fill: currentColor;
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* footer section */
